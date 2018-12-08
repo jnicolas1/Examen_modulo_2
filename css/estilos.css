@@ -2,7 +2,7 @@ header{
   background-color: #5b7989;
   border-radius: 10px;
   display: flex;
-
+  justify-content: space-between;
 }
 header h1 {
   text-align: left;
@@ -10,18 +10,40 @@ header h1 {
   filter: drop-shadow(3px 3px 3px #02010a);
   width: auto;
   height: auto;
-
 }
-header h2{
-  text-align: right;
+header div{
+    text-align: right;
+    margin-top: 32px;
 }
-
-ul li{
-  display:inline-flex;
-}
-.no{
+.menu a:nth-child(1){
   text-decoration: none;
 }
-header a:nth-child(1){
-  text-decoration: none;
+div a{
+  font-size: 2em;
+}
+.centroImagen{
+  text-align: center;
+  background: #82c3a6;
+}
+div img{
+  width: 50%;
+  height: 40%;
+  padding: 5px;
+}
+section{
+  text-align: center;
+  flex: auto;
+  padding: 5px;
+  background:  #d5c75f;
+}
+
+.img2{
+  width: 40%;
+  height: 20%;
+  border: 1px solid;
+}
+.img1{
+  width: 40%;
+  height: 422px;
+  border: 1px solid;
 }
