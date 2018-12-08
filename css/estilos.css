@@ -1,0 +1,27 @@
+header{
+  background-color: #5b7989;
+  border-radius: 10px;
+  display: flex;
+
+}
+header h1 {
+  text-align: left;
+  color: white;
+  filter: drop-shadow(3px 3px 3px #02010a);
+  width: auto;
+  height: auto;
+
+}
+header h2{
+  text-align: right;
+}
+
+ul li{
+  display:inline-flex;
+}
+.no{
+  text-decoration: none;
+}
+header a:nth-child(1){
+  text-decoration: none;
+}
