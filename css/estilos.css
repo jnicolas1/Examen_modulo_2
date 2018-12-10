@@ -21,49 +21,51 @@ header div{
   text-decoration: none;
 }
 div a{
-  font-size: 1em;
+
+  font-size: 20px;
 }
 .centroImagen{
   text-align: center;
   background: #82c3a6;
 }
-.img3,.img2,.img1{
-  width: 50%;
-  height: 40%;
-  margin: 5px;
-}
-.img1{
 
+
+.img1{
+  width: 80%;
   box-shadow: 2px 2px 2px  #82c3a6;
 }
-section{
-  text-align: center;
-  flex: auto;
-  padding: 5px;
+.er{
+  display: flex;
   background:  #d5c75f;
 }
-
-.img2,.img1{
-  width: 40%;
+.mg{
+  text-align: center;
+  width: 50%;
+}
+.img2,.img1,.img3{
+  width: 90%;
   height: 350px;
   border: 1px solid;
 }
 @media (max-width: 800px) {
-
 	.titulo, .menu{
 	text-align: center;
 	}
-header, .er{
-	display: block;
-	text-align: center;
 
+header,.er,.mg{
+	display: block;
+  width: 100%;
+	text-align: center;
 }
-.img1,.img2{
+.img1,.img2,.img3{
   width:90%;
   height: 90%;
   text-align: center;
 }
+
+
 }
+
 @keyframes rodar{
 
 to{
@@ -74,7 +76,6 @@ to{
   animation: rodar 2s infinite;
   border: 2px solid;
 }
-
 @keyframes tras{
 
 to{
@@ -86,4 +87,23 @@ to{
   animation: tras 2s infinite;
 	box-shadow: 2px 2px 2px 2px #82c3a6;
   border: 2px solid black;
+}
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloque1,.bloque2,.bloque3,.bloque4{
+  width: 25%;
+}
+
+@media (max-width: 600px) {
+  .contenedor{
+  display: block;
+  text-align: left;
+  margin: 15px
+  }
+  .bloque1,.bloque2,.bloque3,.bloque4{
+    width: 100%;
+  }
 }
