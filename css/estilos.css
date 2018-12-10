@@ -1,15 +1,17 @@
+*{
+font-family: 'Dancing Script',cursive;
+}
 header{
   background-color: #5b7989;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px ;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  text-align: center;
 }
-header h1 {
+.titulo{
   text-align: left;
   color: white;
   filter: drop-shadow(3px 3px 3px #02010a);
-  width: auto;
-  height: auto;
 }
 header div{
     text-align: right;
@@ -19,16 +21,20 @@ header div{
   text-decoration: none;
 }
 div a{
-  font-size: 2em;
+  font-size: 1em;
 }
 .centroImagen{
   text-align: center;
   background: #82c3a6;
 }
-div img{
+.img3,.img2,.img1{
   width: 50%;
   height: 40%;
-  padding: 5px;
+  margin: 5px;
+}
+.img1{
+
+  box-shadow: 2px 2px 2px  #82c3a6;
 }
 section{
   text-align: center;
@@ -37,13 +43,47 @@ section{
   background:  #d5c75f;
 }
 
-.img2{
+.img2,.img1{
   width: 40%;
-  height: 20%;
+  height: 350px;
   border: 1px solid;
 }
-.img1{
-  width: 40%;
-  height: 422px;
-  border: 1px solid;
+@media (max-width: 800px) {
+
+	.titulo, .menu{
+	text-align: center;
+	}
+header, .er{
+	display: block;
+	text-align: center;
+
+}
+.img1,.img2{
+  width:90%;
+  height: 90%;
+  text-align: center;
+}
+}
+@keyframes rodar{
+
+to{
+	transform: rotate(10deg);
+}
+}
+.img1:hover{
+  animation: rodar 2s infinite;
+  border: 2px solid;
+}
+
+@keyframes tras{
+
+to{
+	transform: translate(5px,-20px);
+}
+
+}
+.img2:hover{
+  animation: tras 2s infinite;
+	box-shadow: 2px 2px 2px 2px #82c3a6;
+  border: 2px solid black;
 }
